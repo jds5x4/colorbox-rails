@@ -16,11 +16,17 @@ $(document).ready(function() {
         e.preventDefault();
 
         $.colorbox(
+<<<<<<< HEAD
             {
                 height: $(this).data("colorbox-height") || false,
                 width: $(this).data("colorbox-width") || false,
                 maxWidth: $(this).data("colorbox-max-width") || false,
                 maxHeight: $(this).data("colorbox-max-height") || false,
+=======
+            { 
+                innerHeight: $(this).data("colorbox-height") || false,
+                innerWidth: $(this).data("colorbox-width") || false,
+>>>>>>> 364b0cc... Customized content for addsheet coupons.
                 iframe: $(this).data("colorbox-iframe") || false,
                 photo: $(this).data("colorbox-photo") || false,
                 innerHeight: $(this).data("colorbox-innerheight") || false,
