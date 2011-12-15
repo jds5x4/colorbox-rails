@@ -14,10 +14,8 @@ $(document).ready(function() {
 
         $.colorbox(
             { 
-                initialHeight: $(this).data("colorbox-height") || false,
-                height: $(this).data("colorbox-height") || false,
-                initialWidth: $(this).data("colorbox-width") || false,
-                width: $(this).data("colorbox-width") || false,
+                innerHeight: $(this).data("colorbox-height") || false,
+                innerWidth: $(this).data("colorbox-width") || false,
                 iframe: $(this).data("colorbox-iframe") || false,
                 href: $(this).attr('href'),
                 opacity: 0.5
