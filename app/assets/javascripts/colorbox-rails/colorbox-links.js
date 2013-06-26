@@ -11,16 +11,16 @@
 (function($){
 
 $(document).ready(function() {
-	
+    
     $(document).on('click', 'a[data-colorbox="true"]', function(e) {
         e.preventDefault();
 
         $.colorbox(
             {
+                height: $(this).data("colorbox-height") || false,
+                width: $(this).data("colorbox-width") || false,
                 maxWidth: $(this).data("colorbox-max-width") || false,
                 maxHeight: $(this).data("colorbox-max-height") || false,
-                innerHeight: $(this).data("colorbox-height") || false,
-                innerWidth: $(this).data("colorbox-width") || false,
                 iframe: $(this).data("colorbox-iframe") || false,
                 photo: $(this).data("colorbox-photo") || false,
                 innerHeight: $(this).data("colorbox-innerheight") || false,
